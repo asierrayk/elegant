@@ -1,0 +1,11 @@
+/*Image*/
+img.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*Code*/
+code.red {color:red;}
+code.green {color: green;}
