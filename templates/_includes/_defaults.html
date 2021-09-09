@@ -289,3 +289,17 @@ PROJECTS = [{
 {% else %}
 {% set SEARCH_TAG_PLACEHOLDER = SEARCH_TAG_PLACEHOLDER %}
 {% endif %}
+
+{% if not RECENT_POSTS %}
+    {% set RECENT_POSTS = 'Recent Posts ' %}
+{% else %}
+    {% set RECENT_POSTS = RECENT_POSTS %}
+{% endif %}
+
+
+{% if not POSTED_IN %}
+    {% set POSTED_IN = 'posted in' %}
+{% else %}
+    {% set POSTED_IN = POSTED_IN %}
+{% endif %}
+
