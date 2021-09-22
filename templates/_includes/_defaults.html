@@ -296,10 +296,26 @@ PROJECTS = [{
     {% set RECENT_POSTS = RECENT_POSTS %}
 {% endif %}
 
-
 {% if not POSTED_IN %}
     {% set POSTED_IN = 'posted in' %}
 {% else %}
     {% set POSTED_IN = POSTED_IN %}
 {% endif %}
 
+{% if not TAGS %}
+    {% set TAGS = 'Tags' %}
+{% else %}
+    {% set TAGS = TAGS %}
+{% endif %}
+
+{% if not CATEGORY %}
+    {% set CATEGORY = 'Category' %}
+{% else %}
+    {% set CATEGORY = CATEGORY %}
+{% endif %}
+
+{% if not PUBLISHED %}
+    {% set PUBLISHED = 'Published' %}
+{% else %}
+    {% set PUBLISHED = PUBLISHED %}
+{% endif %}
