@@ -319,3 +319,9 @@ PROJECTS = [{
 {% else %}
     {% set PUBLISHED = PUBLISHED %}
 {% endif %}
+
+{% if not CONTENTS %}
+    {% set CONTENTS = 'Contents' %}
+{% else %}
+    {% set CONTENTS = CONTENTS %}
+{% endif %}

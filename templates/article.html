@@ -49,7 +49,8 @@
     {% if article.toc %}
     <div class="span2 table-of-content">
         <nav>
-        <h4>Contents</h4>
+        {% from '_includes/_defaults.html' import CONTENTS with context %}
+        <h4>{{ CONTENTS }}</h4>
         {{ article.toc }}
         </nav>
     </div>
